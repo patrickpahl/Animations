@@ -15,6 +15,10 @@
 		7992955922B54503007BBDAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7992955722B54503007BBDAF /* LaunchScreen.storyboard */; };
 		7992956122B5460A007BBDAF /* KeyframeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992956022B5460A007BBDAF /* KeyframeViewController.swift */; };
 		7992956322B5A5F4007BBDAF /* CASpringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992956222B5A5F4007BBDAF /* CASpringViewController.swift */; };
+		79BDF70F22C324EB00F42BD7 /* AnimatedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BDF70E22C324EB00F42BD7 /* AnimatedTableViewController.swift */; };
+		79BDF71222C325B400F42BD7 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BDF71022C325B400F42BD7 /* CarTableViewCell.swift */; };
+		79BDF71322C325B400F42BD7 /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79BDF71122C325B400F42BD7 /* CarTableViewCell.xib */; };
+		79BDF71522C3272500F42BD7 /* NavBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BDF71422C3272400F42BD7 /* NavBarExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		7992955A22B54503007BBDAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7992956022B5460A007BBDAF /* KeyframeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyframeViewController.swift; sourceTree = "<group>"; };
 		7992956222B5A5F4007BBDAF /* CASpringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASpringViewController.swift; sourceTree = "<group>"; };
+		79BDF70E22C324EB00F42BD7 /* AnimatedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTableViewController.swift; sourceTree = "<group>"; };
+		79BDF71022C325B400F42BD7 /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
+		79BDF71122C325B400F42BD7 /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
+		79BDF71422C3272400F42BD7 /* NavBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +69,14 @@
 			isa = PBXGroup;
 			children = (
 				7992954E22B544FE007BBDAF /* AppDelegate.swift */,
+				79BDF71422C3272400F42BD7 /* NavBarExtension.swift */,
 				7992955022B544FE007BBDAF /* ViewController.swift */,
 				7992956022B5460A007BBDAF /* KeyframeViewController.swift */,
 				7992956222B5A5F4007BBDAF /* CASpringViewController.swift */,
 				798898B322B6D96C00351C27 /* CADisplayLinkViewController.swift */,
+				79BDF70E22C324EB00F42BD7 /* AnimatedTableViewController.swift */,
+				79BDF71022C325B400F42BD7 /* CarTableViewCell.swift */,
+				79BDF71122C325B400F42BD7 /* CarTableViewCell.xib */,
 				7992955222B544FE007BBDAF /* Main.storyboard */,
 				7992955522B54503007BBDAF /* Assets.xcassets */,
 				7992955722B54503007BBDAF /* LaunchScreen.storyboard */,
@@ -133,6 +145,7 @@
 			files = (
 				7992955922B54503007BBDAF /* LaunchScreen.storyboard in Resources */,
 				7992955622B54503007BBDAF /* Assets.xcassets in Resources */,
+				79BDF71322C325B400F42BD7 /* CarTableViewCell.xib in Resources */,
 				7992955422B544FE007BBDAF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,10 +158,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7992956122B5460A007BBDAF /* KeyframeViewController.swift in Sources */,
+				79BDF71222C325B400F42BD7 /* CarTableViewCell.swift in Sources */,
 				7992956322B5A5F4007BBDAF /* CASpringViewController.swift in Sources */,
+				79BDF70F22C324EB00F42BD7 /* AnimatedTableViewController.swift in Sources */,
 				7992955122B544FE007BBDAF /* ViewController.swift in Sources */,
 				7992954F22B544FE007BBDAF /* AppDelegate.swift in Sources */,
 				798898B422B6D96C00351C27 /* CADisplayLinkViewController.swift in Sources */,
+				79BDF71522C3272500F42BD7 /* NavBarExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,14 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vZ-qm-eah">
-                                <rect key="frame" x="122.5" y="138" width="169" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <color key="textColor" white="0.92774329339999995" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7t-td-w2m">
-                                <rect key="frame" x="86.5" y="230" width="241" height="42"/>
+                                <rect key="frame" x="86.5" y="188" width="241" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Key Frame Animations"/>
                                 <connections>
@@ -33,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yN-MD-seG">
-                                <rect key="frame" x="91.5" y="302" width="231" height="42"/>
+                                <rect key="frame" x="91.5" y="260" width="231" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="CASpring Animations"/>
                                 <connections>
@@ -41,24 +35,32 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVs-NF-JfM">
-                                <rect key="frame" x="127.5" y="374" width="159" height="42"/>
+                                <rect key="frame" x="127.5" y="332" width="159" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="CADisplayLink"/>
                                 <connections>
                                     <segue destination="hpt-Nq-uXy" kind="show" id="Ugk-n7-Z9D"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGT-v4-boa">
+                                <rect key="frame" x="98" y="404" width="218" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Animated TableView"/>
+                                <connections>
+                                    <segue destination="rSb-EV-RMQ" kind="show" id="ePR-9a-ppJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6vZ-qm-eah" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="072-I6-hCf"/>
-                            <constraint firstItem="s7t-td-w2m" firstAttribute="top" secondItem="6vZ-qm-eah" secondAttribute="bottom" constant="50" id="0Ta-Kb-jMQ"/>
                             <constraint firstItem="s7t-td-w2m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3gM-rP-aZm"/>
+                            <constraint firstItem="s7t-td-w2m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="PSP-DV-ua6"/>
                             <constraint firstItem="6yN-MD-seG" firstAttribute="top" secondItem="s7t-td-w2m" secondAttribute="bottom" constant="30" id="UDx-DB-bcE"/>
+                            <constraint firstItem="GGT-v4-boa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zrh-DB-7ma"/>
                             <constraint firstItem="wVs-NF-JfM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="apg-qJ-pxW"/>
                             <constraint firstItem="6yN-MD-seG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eoy-CS-KxD"/>
-                            <constraint firstItem="6vZ-qm-eah" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ewU-fl-U9E"/>
                             <constraint firstItem="wVs-NF-JfM" firstAttribute="top" secondItem="6yN-MD-seG" secondAttribute="bottom" constant="30" id="gpy-gS-Ij6"/>
+                            <constraint firstItem="GGT-v4-boa" firstAttribute="top" secondItem="wVs-NF-JfM" secondAttribute="bottom" constant="30" id="rw3-PM-8nb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -112,6 +114,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U9h-Ly-1PR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1899" y="110"/>
+        </scene>
+        <!--Animated Table View Controller-->
+        <scene sceneID="AXL-xH-PgN">
+            <objects>
+                <viewController id="rSb-EV-RMQ" customClass="AnimatedTableViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="avh-ec-8nD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qtj-co-URX">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qtj-co-URX" firstAttribute="leading" secondItem="MlF-Ue-m0B" secondAttribute="leading" id="4im-aR-XNt"/>
+                            <constraint firstAttribute="bottom" secondItem="Qtj-co-URX" secondAttribute="bottom" id="KtG-0p-FoD"/>
+                            <constraint firstItem="Qtj-co-URX" firstAttribute="trailing" secondItem="MlF-Ue-m0B" secondAttribute="trailing" id="f1g-C4-elX"/>
+                            <constraint firstItem="Qtj-co-URX" firstAttribute="top" secondItem="MlF-Ue-m0B" secondAttribute="top" id="fhf-7G-vwt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MlF-Ue-m0B"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Qtj-co-URX" id="YG2-X1-YEa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W2N-de-O4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="334.78260869565219" y="815.625"/>
         </scene>
         <!--Display Link View Controller-->
         <scene sceneID="8el-rZ-uzk">
@@ -306,10 +338,10 @@
             </objects>
             <point key="canvasLocation" x="1911.594202898551" y="815.625"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Light Content Navigation Controller-->
         <scene sceneID="Uc2-aT-a0e">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EGr-FW-he4" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EGr-FW-he4" customClass="LightContentNavigationController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DoV-RF-a4o">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
