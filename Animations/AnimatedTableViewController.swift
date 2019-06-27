@@ -11,6 +11,7 @@ class AnimatedTableViewController: UIViewController, UITableViewDataSource, UITa
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Animate TableView"
         let nib = UINib(nibName: carCell, bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: carCell)
         tableView.dataSource = self
@@ -25,17 +26,17 @@ class AnimatedTableViewController: UIViewController, UITableViewDataSource, UITa
 
     func animateTableView() {
         tableView.reloadData()
-        let visableCells = tableView.visibleCells
+        let visibleCells = tableView.visibleCells
         let tableViewHeight = tableView.bounds.size.height
         // Getting the height so we can keep all the cells off the screen and then move them in
-        for cell in visableCells {
+        for cell in visibleCells {
             cell.transform = CGAffineTransform(translationX: 0, y: tableViewHeight)
             // Moving the cells down the height of the tableView
         }
 
         // Now we are moving up each cell after the other using the delay
         var delayCounter = 0
-        for cell in visableCells {
+        for cell in visibleCells {
             UIView.animate(withDuration: 2, delay: Double(delayCounter) * 0.05, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
                 cell.transform = CGAffineTransform.identity
                 // Setting cell back to it's identity, original form

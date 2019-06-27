@@ -6,7 +6,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         navigationController?.showDarkNavBar()
-        title = "Animations"
     }
     
 }

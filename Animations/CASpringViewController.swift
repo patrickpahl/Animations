@@ -25,6 +25,7 @@ class CASpringViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "CASpring Animations"
         animateLogo()
         animateTextFieldsAndButton()
         animateCarAcrossView()
@@ -54,7 +55,7 @@ class CASpringViewController: UIViewController {
         loginButton.layer.add(flyRight, forKey: nil)
     }
     
-    /// Group Animations: multiple animations at once.
+    /// Group Animations
     func animateLogo() {
         let groupAnimation = CAAnimationGroup()
         groupAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
@@ -78,9 +79,12 @@ class CASpringViewController: UIViewController {
         teslaLogo.layer.add(groupAnimation, forKey: nil)
     }
     
+    
+    
+    
     /// Animate image across screen
     func animateCarAcrossView() {
-        teslaCarImageView.frame = CGRect(x: 0.0, y: loginButton.center.y + 200.0,  width: view.frame.size.width, height: 190)
+        teslaCarImageView.frame = CGRect(x: 0.0, y: loginButton.center.y + 20.0,  width: view.frame.size.width, height: 190)
         // Info label will be 30 points under login button
         view.insertSubview(teslaCarImageView, belowSubview: loginButton)
         let flyLeft = CABasicAnimation(keyPath: KeyPath.positionX)
